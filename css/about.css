@@ -1,0 +1,32 @@
+.about-wrapper {
+    margin-top: 100px;
+}
+
+.about-wrapper img {
+    width: 667px;
+}
+
+.us-wrapper {
+    width: 400px;
+    /* background-color: #bfa; */
+    margin: 43px 0;
+    float: right;
+}
+
+.about-wrapper h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.about-wrapper p {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.quality {
+    float: left;
+    width: 400px;
+    margin: 43px 0;
+    margin-right: 133px;
+}

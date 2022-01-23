@@ -1,0 +1,81 @@
+.contact-title {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.contact-title h3 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 300px;
+}
+
+.socialmedia a {
+    display: block;
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    text-align: center;
+    /* background-color: #bfa; */
+    font-size: 18px;
+    color: #999;
+    border: 2px solid #999;
+    border-radius: 50%;
+    padding-top: 25px;
+}
+
+.socialmedia i {
+    font-size: 32px;
+}
+
+.form-wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.form-wrapper .user {
+    display: block;
+    margin: 15px auto;
+    width: 590px;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+.form-wrapper .message {
+    display: block;
+    width: 590px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+
+/* 送出按鈕 */
+
+.form-wrapper .sub {
+    width: 150px;
+    height: 35px;
+    margin: 20px 405px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    background-color: #343a40;
+    color: white;
+}
+
+.form-wrapper .sub:hover {
+    background-color: #525252;
+    cursor: pointer;
+}

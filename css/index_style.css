@@ -1,0 +1,93 @@
+/* 首頁banner */
+
+.banner {
+    margin-bottom: 100px;
+}
+
+.banner img {
+    vertical-align: top;
+    width: 100%;
+}
+
+
+/* 首頁slogan*/
+
+.slogan-wrapper img {
+    width: 667px;
+    vertical-align: top;
+}
+
+.slogan {
+    margin-bottom: 70px;
+}
+
+.slogan img {
+    float: left;
+}
+
+.slogan-article {
+    float: left;
+    width: 500px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slogan-article h2 {
+    font-size: 38px;
+    margin: 65px 0;
+}
+
+.slogan-article p {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 33px;
+}
+
+
+/*作品展示 */
+
+.show {
+    position: relative;
+}
+
+.show a:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .4);
+}
+
+.show .show-img {
+    display: block;
+    float: left;
+    width: 340px;
+    margin: 30px;
+}
+
+.show img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.show-wrapper h3 {
+    text-align: center;
+    font-size: 48px;
+    color: #202020;
+    margin-bottom: 20px;
+}
+
+.show i {
+    position: absolute;
+    font-size: 30px;
+}
+
+.show i:hover {
+    color: silver;
+}
+
+.show .fa-angle-left {
+    left: 0;
+    top: 133px;
+}
+
+.show .fa-angle-right {
+    right: 0;
+    top: 133px;
+}

@@ -1,0 +1,131 @@
+.awards-wrapper {
+    margin-top: 100px;
+}
+
+.awards {
+    position: relative;
+}
+
+
+/* 歷年得獎紀錄 */
+
+.awards-wrapper h2 {
+    font-size: 36px;
+    color: #444;
+    margin-bottom: 50px;
+}
+
+
+/* 時間線 */
+
+.awards {
+    position: relative;
+}
+
+.timeline-start {
+    position: absolute;
+    left: 5%;
+    padding: 15px 23px;
+    background-color: rgb(247, 244, 244);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+    font-size: 18px;
+    font-weight: 900;
+    color: #444;
+}
+
+.center-line {
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    width: 3px;
+    height: 100%;
+    background-color: #444;
+    z-index: -1;
+}
+
+.timeline-end {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    padding: 15px 23px;
+    background-color: rgb(247, 244, 244);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+    font-size: 18px;
+    font-weight: 900;
+    color: #444;
+}
+
+
+/* 得獎作品 */
+
+.timeline-content {
+    margin-left: 170px;
+    padding-top: 100px;
+    /* background-color: #bfa; */
+}
+
+.awards-item .year {
+    width: 62px;
+    height: 62px;
+    background-color: #abb;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -530px;
+    text-align: center;
+    line-height: 62px;
+    font-size: 15px;
+}
+
+.awards-item .item-wrapper {
+    background-color: rgb(247, 244, 244);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+    height: 320px;
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.item-title {
+    width: 66%;
+    margin-left: 30px;
+}
+
+.item-title h6 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.item-title p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.item-title img {
+    width: 300px;
+}
+
+.item-title img:hover {
+    cursor: pointer;
+}
+
+.certificate {
+    position: absolute;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    right: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.awards-work {
+    width: 150px;
+}
+
+.certificate img {
+    width: 100%;
+}

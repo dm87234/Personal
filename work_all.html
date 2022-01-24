@@ -19,15 +19,30 @@
         <!-- 頭部菜單的容器 -->
         <div class="menu-wrapper w clearfix">
             <!--logo  -->
+
             <a class="logo" href="index.html">
                 <img src="./img/logo2.png" alt="">
                 <h1>享舍室內設計</h1>
             </a>
 
+
             <ul class="menu">
                 <li class="menu-item"><a href="about.html">關於我們</a></li>
                 <li class="menu-item"><a href="awards.html">得獎紀錄</a></li>
-                <li class="menu-item"><a href="work_all.html">作品</a></li>
+                <li class="menu-item work_all">
+                    <a href="work_all.html">
+                        設計札記
+                    </a>
+                    <ul class="works">
+                        <li>
+                            <a href="works_home.html">住宅空間</a>
+                        </li>
+                        <li>
+                            <a href="works_com.html">商業空間</a>
+                        </li>
+                    </ul>
+
+                </li>
                 <li class="menu-item"><a href="service.html">服務內容</a></li>
                 <li class="menu-item"><a href="contact.html">聯絡我們</a></li>
 
@@ -37,8 +52,15 @@
 
     <main>
         <div class="all-wrapper w">
-            <div class="home-space">住宅空間</div>
-            <div class="com-space">商業空間</div>
+            <a class="home-space" href="works_home.html">
+                <div class="shadow"></div>
+                <span> 住宅空間</span>
+
+            </a>
+            <a class="com-space" href="works_com.html">
+                <div class="shadow"></div>
+                <span>商業空間</span>
+            </a>
         </div>
     </main>
 

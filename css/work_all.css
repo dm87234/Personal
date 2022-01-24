@@ -1,10 +1,42 @@
 .all-wrapper {
-    width: 1000px;
+    width: 800px;
     margin: 0 auto;
 }
 
-.all-wrapper div {
-    height: 200px;
-    background-color: #bfa;
+.all-wrapper a {
+    display: block;
+    height: 230px;
+    /* background-color: #bfa; */
     margin: 50px 0;
+    position: relative;
+}
+
+.all-wrapper span {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 0;
+    font-size: 36px;
+    z-index: 4;
+}
+
+.home-space {
+    background-image: url(../img/work/wa1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.com-space {
+    background-image: url(../img/work/wa3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -30px;
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(141, 141, 141, .5);
+    position: relative;
+    z-index: 3;
 }

@@ -54,16 +54,28 @@ header {
 
 .menu .menu-item {
     float: left;
+    width: 110px;
     margin-right: 20px;
 }
 
 .menu a {
-    display: block;
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
     font-size: 20px;
     font-weight: 700px;
     letter-spacing: 1px;
     line-height: 80px;
+    overflow: hidden;
+}
+
+.menu b {
+    transform: translateY(0);
+    transition: all .4s;
+}
+
+.menu a:hover b {
+    transform: translateY(-80px);
 }
 
 
@@ -86,6 +98,7 @@ header {
     top: 65px;
     background-color: #f0f0f0;
     transition: all .3s;
+    z-index: 99;
 }
 
 .works li a {

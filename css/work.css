@@ -36,3 +36,87 @@
     margin-top: 8px;
     font-size: 16px;
 }
+
+
+/* 動畫 */
+
+.img-wrapper {
+    position: relative;
+    z-index: 99;
+}
+
+.img-wrapper .open p {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    /* 轉場 */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.line-left {
+    position: absolute;
+    left: -266px;
+    top: 9px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 184px;
+    height: 1px;
+    background-color: white;
+    /* 轉場 */
+    transform: scale(0);
+    transform-origin: left;
+    transition: all .8s;
+}
+
+.line-right {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    right: -266px;
+    bottom: 0;
+    margin: auto;
+    width: 184px;
+    height: 1px;
+    background-color: white;
+    /* 轉場 */
+    transform: scale(0);
+    transform-origin: right;
+    transition: all .8s;
+}
+
+.img-wrapper::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 0.5);
+    z-index: 10;
+}
+
+.img-wrapper:hover .open>p {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-wrapper:hover .line-left,
+.img-wrapper:hover .line-right {
+    transform: scale(1);
+}
+
+.img-wrapper:hover::after {
+    background-color: rgba(32, 32, 32, 0.2);
+}

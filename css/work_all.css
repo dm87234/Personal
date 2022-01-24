@@ -1,0 +1,10 @@
+.all-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.all-wrapper div {
+    height: 200px;
+    background-color: #bfa;
+    margin: 50px 0;
+}

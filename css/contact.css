@@ -1,5 +1,6 @@
 .contact-title {
     margin: 50px 0;
+    margin-top: 135px;
     text-align: center;
 }
 
@@ -83,7 +84,7 @@
 
 /* 動畫 */
 
-@keyframes wave {
+@keyframes tada {
     0% {
         transform: scale(1);
     }

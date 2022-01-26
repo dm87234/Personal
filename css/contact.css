@@ -121,5 +121,5 @@
 }
 
 .socialmedia a:hover {
-    animation: wave 1s;
+    animation: tada 1s;
 }

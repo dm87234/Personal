@@ -1,5 +1,5 @@
 .work-wrapper h2 {
-    padding-top: 100px;
+    margin-top: 50px;
     font-size: 42px;
     text-align: center;
 }
@@ -119,4 +119,38 @@
 
 .img-wrapper:hover::after {
     background-color: rgba(32, 32, 32, 0.2);
+}
+
+
+/* 頁碼 */
+
+.page {
+    text-align: center;
+}
+
+.page a {
+    padding: 5px 12px;
+    border: 1px #e5e5e5 solid;
+    border-right: none;
+    display: inline-block;
+    font-size: 14px;
+    color: #777;
+}
+
+.page a:hover {
+    background-color: #f0f0f0;
+}
+
+.page .prev {
+    border-right: 1px #e5e5e5 solid;
+}
+
+.page .next {
+    border-right: 1px #e5e5e5 solid;
+}
+
+.page .num {
+    padding: 5px 12px;
+    color: #444;
+    font-size: 14px;
 }

@@ -1,6 +1,11 @@
 .describe-wrapper {
-    margin-top: 135px;
+    margin-top: 50px;
     box-sizing: border-box;
+}
+
+.describe-wrapper h2 {
+    font-size: 42px;
+    text-align: center;
 }
 
 .describe {

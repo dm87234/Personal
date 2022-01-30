@@ -50,6 +50,9 @@ header {
 .menu-wrapper .logo {
     float: left;
     margin-left: 50px;
+    padding: 5px;
+    /* background-color: #bfa; */
+    /* width: 100px; */
 }
 
 .menu-wrapper .menu {
@@ -66,7 +69,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 70px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700px;
     letter-spacing: 1px;
     line-height: 80px;
@@ -138,7 +141,7 @@ header {
 
 .information-wrapper .map {
     float: right;
-    background-color: #abc;
+    /* background-color: #abc; */
     width: 550px;
     height: 200px;
     overflow: hidden;

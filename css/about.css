@@ -1,5 +1,9 @@
 .about-wrapper {
-    margin-top: 135px;
+    margin-top: 100px;
+}
+
+.about-wrapper:last-child {
+    margin-top: 50px;
 }
 
 .about-wrapper img {

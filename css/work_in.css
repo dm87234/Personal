@@ -1,0 +1,58 @@
+.describe-wrapper {
+    margin-top: 135px;
+    box-sizing: border-box;
+}
+
+.describe {
+    width: 1000px;
+    margin: 0 auto 10px;
+    color: #444;
+    font-size: 15px;
+}
+
+.describe li {
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+.describe li h5 {
+    float: left;
+    width: 150px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.describe li p {
+    float: right;
+    width: calc(100% - 200px);
+    padding: 10px 0;
+}
+
+
+/* 相本區 */
+
+.album-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    /* background-color: #bfa; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.album {
+    /* background-color: pink; */
+    width: 300px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.album img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.album p {
+    margin: 10px 0;
+}

@@ -1,7 +1,13 @@
 .contact-title {
     margin: 50px 0;
-    margin-top: 135px;
+    margin-top: 100px;
     text-align: center;
+}
+
+.contact-title h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 42px;
 }
 
 .contact-title h3 {

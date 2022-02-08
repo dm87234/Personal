@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/basic.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <link rel="stylesheet" href="css/work_in.css">
 
 </head>
@@ -104,32 +110,32 @@
         </div>
         <ul class="album-wrapper">
             <li class="album">
-                <a href="javascript:;">
+                <a data-fancybox="gallery" href="./img/work/w1.jpg">
                     <img src="./img/work/w1.jpg" alt="">
                     <p>鄉村溫暖</p>
                 </a>
             </li>
             <li class="album">
-                <a href="javascript:;">
-                    <img src="./img/work/w1.jpg" alt="">
+                <a data-fancybox="gallery" href="./img/work/w3.jpg">
+                    <img src="./img/work/w3.jpg" alt="">
                     <p>鄉村溫暖</p>
                 </a>
             </li>
             <li class="album">
-                <a href="javascript:;">
-                    <img src="./img/work/w1.jpg" alt="">
+                <a data-fancybox="gallery" href="./img/work/w5.jpg">
+                    <img src="./img/work/w5.jpg" alt="">
                     <p>鄉村溫暖</p>
                 </a>
             </li>
             <li class="album">
-                <a href="javascript:;">
-                    <img src="./img/work/w1.jpg" alt="">
+                <a data-fancybox="gallery" href="./img/work/w9.jpg">
+                    <img src="./img/work/w9.jpg" alt="">
                     <p>鄉村溫暖</p>
                 </a>
             </li>
             <li class="album">
-                <a href="javascript:;">
-                    <img src="./img/work/w1.jpg" alt="">
+                <a data-fancybox="gallery" href="./img/work/w10.jpg">
+                    <img src="./img/work/w10.jpg" alt="">
                     <p>鄉村溫暖</p>
                 </a>
             </li>
@@ -184,7 +190,12 @@
         </div>
     </footer>
 
-
+    <script type="text/javascript">
+        $("[data-fancybox]").fancybox({
+            // Options will go here
+            loop: true
+        });
+    </script>
 </body>
 
 </html>

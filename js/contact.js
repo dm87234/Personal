@@ -3,13 +3,15 @@ window.addEventListener('load', function() {
     //1.為送出按鈕綁定點擊事件
     var sub = document.querySelector('.sub');
     var send = document.querySelector('.send');
-    var close = document.querySelector('.close');
+    // var close = document.querySelector('.close');
     var body = document.body;
-    var mask = document.querySelector('.mask');
+    var contactWrapper = document.querySelector('.contact-wrapper');
+    var main = document.querySelector('main');
     sub.addEventListener('click', function(e) {
         //2.讓彈出框顯示
-        body.classList.add('-on');
+        main.classList.add('-on');
         send.style.display = 'block';
+        contactWrapper.style.opacity = '0.5';
         window.scroll(0, 0);
         e.stopPropagation();
     }, false);
@@ -22,6 +24,7 @@ window.addEventListener('load', function() {
     //	4. 點擊其他地方時也可以消失
     body.addEventListener('click', function() {
         send.style.display = 'none';
-        this.classList.remove('-on');
+        main.classList.remove('-on');
+        contactWrapper.style.opacity = '1';
     }, false);
 })

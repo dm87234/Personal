@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>享舍室內設計</title>
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="swiper-7.4.1/swiper-7.4.1/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="swiper-7.4.1/swiper-7.4.1/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+
+    <title>享舍室內設計</title>
 </head>
 
+
 <body>
+
     <!-- header導航 -->
     <header>
         <!-- 頭部菜單的容器 -->
@@ -74,20 +84,36 @@
     <main>
         <!-- banner -->
         <div class="banner">
-            <img src="./img/index/index-b03.jpg" alt="">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/index/index-b02.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/index-b03.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/index-b1.jpg" />
+                    </div>
+
+                </div>
+                <!-- 小圓點 -->
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
 
         <!-- slogan -->
         <div class="slogan-wrapper clearfix">
             <div class="slogan w clearfix">
                 <img src="./img/index/index-s1.jpg" alt="">
-                <div class="slogan-article">
+                <div class="slogan-article " data-aos="fade-left">
                     <h2>在家就是享受</h2>
                     <p>用心規劃每個細節，實踐個性、純粹的人本需求並創作自然、精緻的視覺領悟；我們審慎思索品味與藝術的生活，執意釋放幽靜雅致的生活體驗。</p>
                 </div>
             </div>
             <div class="slogan w clearfix">
-                <div class="slogan-article">
+                <div class="slogan-article" data-aos="fade-right">
                     <h2>無毒建材，保障居家健康</h2>
                     <p>長久以來，我們專注於設計的合法性與追求垂直整合各項目之專業技能來彰顯人本主義的美學概念，堅持喚醒安全且具有品味的場所精神。</p>
                 </div>
@@ -96,7 +122,7 @@
 
             <div class="slogan w clearfix">
                 <img src="./img/index/index-s3.jpg" alt="">
-                <div class="slogan-article">
+                <div class="slogan-article" data-aos="fade-left">
                     <h2>享舍，為您打造溫暖好舍</h2>
                     <p>設計團隊擁有建築物室內設計技術士證照與建築物室內裝修工程管理技術士證照。</p>
                 </div>
@@ -107,24 +133,39 @@
         <div class="show-wrapper w">
             <h3>作品展示</h3>
             <div class="show clearfix">
-                <a href="javascript:;">
+                <a class="arrow-l" href="javascript:;">
                     <i class="fas fa-angle-left"></i>
                 </a>
-                <a class="show-img" href="javascript:;">
-                    <img src="./img/index/w1.jpg" alt="">
-                </a>
-                <a class="show-img" href="javascript:;">
-                    <img src="./img/index/w2.jpg" alt="">
-                </a>
-                <a class="show-img" href="javascript:;">
-                    <img src="./img/index/w3.jpg" alt="">
-                </a>
+                <div class="show-img-wrapper clearfix">
 
-                <a href="javascript:;">
+                    <a class="show-img" href="work_in.html">
+                        <img src="./img/index/w1.jpg" alt="">
+                    </a>
+                    <a class="show-img" href="work_in.html">
+                        <img src="./img/index/w2.jpg" alt="">
+                    </a>
+                    <a class="show-img" href="work_in.html">
+                        <img src="./img/index/w3.jpg" alt="">
+                    </a>
+                    <a class="show-img" href="work_in.html">
+                        <img src="./img/index/w5.jpg" alt="">
+                    </a>
+                    <a class="show-img" href="work_in.html">
+                        <img src="./img/index/w7.jpg" alt="">
+                    </a>
+                    <a class="show-img" href="work_in.html">
+                        <img src="./img/index/w8.jpg" alt="">
+                    </a>
+                </div>
+                <a class="arrow-r" href="javascript:;">
                     <i class="fas fa-angle-right"></i>
                 </a>
             </div>
         </div>
+
+        <a href="javascript:;" class="to-top">
+            <i></i> TOP
+        </a>
     </main>
 
     <footer>
@@ -172,6 +213,38 @@
             本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:堆設計stackdesign。
         </div>
     </footer>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 
 </html>

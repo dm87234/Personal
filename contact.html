@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/contact.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./js/contact.js"></script>
 </head>
 
 <body>
+
     <!-- header導航 -->
     <header>
         <!-- 頭部菜單的容器 -->
@@ -72,7 +74,9 @@
     </header>
 
     <!-- main區塊 -->
+
     <main>
+        <!-- 遮罩 -->
         <div class="contact-wrapper w">
 
 
@@ -102,7 +106,7 @@
             </div>
 
             <div class="form-wrapper clearfix">
-                <form action="#">
+                <form action="javascript:;">
                     <input class="user" type="text" placeholder="姓名">
                     <input class="user" type="text" placeholder="電話">
                     <input class="user" type="text" placeholder="信箱">
@@ -114,7 +118,15 @@
                     <input class="sub" type="submit" value="送出">
                 </form>
             </div>
+
+            <div class="send animate__animated animate__zoomIn">
+                <i class="fas fa-times close"></i> 已收到你的訊息，我們將會盡快與您聯絡。
+            </div>
         </div>
+
+
+
+
     </main>
 
     <footer>

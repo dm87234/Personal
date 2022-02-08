@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>關於享舍</title>
+    <title>服務內容</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/service.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -24,7 +24,6 @@
                 <img src="./img/logo3.png" alt="">
                 <h1>享舍室內設計</h1>
             </a>
-
 
             <ul class="menu">
                 <li class="menu-item">
@@ -78,24 +77,24 @@
                 </h2>
 
                 <ul>
-                    <li class="services">
+                    <li class="services" data-aos="fade-right" data-aos-delay="400">
                         <img src="img/service/o1.png" alt="">
                         <h4>商空類</h4>
                         <h5>商業店面、辦公場所<br> 商業空間設計與施工
                         </h5>
                     </li>
-                    <li class="services">
+                    <li class="services" data-aos="fade-right">
                         <img src="img/service/o2.png" alt="">
                         <h4>住宅類</h4>
                         <h5>新屋裝修、舊屋整建<br> 住宅空間設計與施工
                         </h5>
                     </li>
-                    <li class="services">
+                    <li class="services" data-aos="fade-left">
                         <img src="img/service/o3.png" alt="">
                         <h4>設計繪圖</h4>
                         <h5>設計圖、施工圖、3D模擬圖</h5>
                     </li>
-                    <li class="services">
+                    <li class="services" data-aos="fade-left" data-aos-delay="400">
                         <img src="img/service/o4.png" alt="">
                         <h4>裝修工程</h4>
                         <h5>單一工項之專業施工技術人員服務</h5>
@@ -107,7 +106,7 @@
                 </h2>
 
                 <div class="standards">
-                    <div>
+                    <div data-aos="fade-down">
                         <h6>收費方式</h6>
                         <ol>
                             <li>簽訂合約書時，即付設計總價款30%</li>
@@ -118,7 +117,7 @@
                         </ol>
                     </div>
 
-                    <div>
+                    <div data-aos="fade-down">
                         <h6>標配服務</h6>
                         <ol>
                             <li>協助辦理銀行裝修工程貸款相關事宜</li>
@@ -138,53 +137,49 @@
             </h2>
 
             <ul>
-                <li>
+                <li data-aos="fade-up">
                     <img src="./img/service/sp01.png" alt="">
                     <h5>首次洽談</h5>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="50">
                     <img src="./img/service/sp02.png" alt="">
                     <h5>現場丈量</h5>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="100">
                     <img src="./img/service/sp03.png" alt="">
                     <h5>繪製草圖提案</h5>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="150">
                     <img src="./img/service/sp04.png" alt="">
                     <h5>簽訂設計合約</h5>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="200">
                     <img src="./img/service/sp05.png" alt="">
                     <h5>繪製細部設計</h5>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="250">
                     <img src="./img/service/sp06.png" alt="">
                     <h5>裝修工程報價</h5>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="300">
                     <img src="./img/service/sp07.png" alt="">
                     <h5>簽訂工程合約</h5>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="350">
                     <img src="./img/service/sp08.png" alt="">
                     <h5>執行工程施工</h5>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="400">
                     <img src="./img/service/sp09.png" alt="">
                     <h5>完工驗收交屋</h5>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="450">
                     <img src="./img/service/sp10.png" alt="">
                     <h5>售後服務保固</h5>
                 </li>
             </ul>
         </div>
     </main>
-
-
-
-
 
     <footer>
         <div class="information-wrapper w clearfix">
@@ -231,6 +226,36 @@
             本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:堆設計stackdesign。
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 
 </html>

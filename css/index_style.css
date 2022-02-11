@@ -52,19 +52,21 @@
 .slogan-article {
     float: left;
     width: 500px;
+    margin-top: 20px;
     text-align: center;
     box-sizing: border-box;
 }
 
 .slogan-article h2 {
     font-size: 38px;
-    margin: 65px 0;
+    margin: 45px 0;
 }
 
 .slogan-article p {
     font-size: 20px;
     box-sizing: border-box;
-    padding: 33px;
+    padding: 30px;
+    text-align: justify;
 }
 
 
@@ -115,18 +117,40 @@
     z-index: 10;
 }
 
+.show .arrow-l {
+    position: absolute;
+    z-index: 100;
+    width: 20px;
+    height: 230px;
+    background-color: #fff;
+    left: 0;
+    top: 29px;
+    cursor: pointer;
+}
+
+.show .arrow-r {
+    position: absolute;
+    z-index: 100;
+    width: 20px;
+    height: 230px;
+    background-color: #fff;
+    right: 0;
+    top: 29px;
+    cursor: pointer;
+}
+
 .show i:hover {
     color: silver;
 }
 
 .show .fa-angle-left {
     left: 0;
-    top: 133px;
+    top: 104px;
 }
 
 .show .fa-angle-right {
     right: 0;
-    top: 133px;
+    top: 104px;
 }
 
 
@@ -201,6 +225,6 @@
     }
 }
 
-.fade_in{
-	opacity: 1;
+.fade_in {
+    opacity: 1;
 }

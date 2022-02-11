@@ -131,12 +131,64 @@ header {
 
 .information-wrapper .information {
     float: left;
-    width: 500px;
+    width: 507px;
     /* background-color: #bfa; */
     font-size: 21px;
     margin-left: 28px;
     letter-spacing: 1px;
     padding-left: 10px;
+}
+
+.information li {
+    margin-bottom: 5px;
+}
+
+.information .tel::before {
+    content: '電話號碼：';
+    background-image: url(../img/index/phone-call.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position-y: center;
+}
+
+.information .cell::before {
+    content: '手機：';
+    background-image: url(../img/index/cell-phone.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position-y: center;
+}
+
+.information .line::before {
+    content: '專人Line id:';
+    background-image: url(../img/index/line.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position-y: center;
+}
+
+.information .mail::before {
+    content: '電子信箱:';
+    background-image: url(../img/index/envelope.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position-y: center;
+}
+
+.information .address::before {
+    content: '事務所地址:';
+    background-image: url(../img/index/map.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position-y: center;
+}
+
+.information .time::before {
+    content: '營業時間:';
+    background-image: url(../img/index/clock.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position-y: center;
 }
 
 .information-wrapper .map {
@@ -149,7 +201,7 @@ header {
 
 .information-wrapper .social-media {
     position: absolute;
-    bottom: -40px;
+    bottom: -10px;
     right: 0;
 }
 

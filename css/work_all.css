@@ -4,63 +4,47 @@
     margin-top: 50px;
 }
 
-.all-wrapper h2 {
-    text-align: center;
-    font-size: 42px;
-    line-height: 1.3;
-}
-
 .all-wrapper a {
+    width: 100%;
     display: block;
-    height: 230px;
+    /* height: 230px; */
     /* background-color: #bfa; */
     margin: 50px 0;
     position: relative;
 }
 
-.all-wrapper span {
-    text-align: center;
-    width: 200px;
-    height: 100px;
-    line-height: 100px;
+.all-wrapper img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.shadow {
+    /* width: 100%;
+    height: 100%; */
+    background-color: rgba(32, 32, 32, 0.5);
     position: absolute;
     color: white;
+    text-align: center;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    font-size: 36px;
     z-index: 4;
-}
-
-.home-space {
-    background-image: url(../img/work/wa1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.com-space {
-    background-image: url(../img/work/wa3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: -30px;
-}
-
-.shadow {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(32, 32, 32, 0.5);
-    position: relative;
-    z-index: 3;
     transition: all .5s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shadow p {
+    font-size: 36px;
 }
 
 
 /* 動畫 */
 
-a:hover .shadow,
-a:hover span {
+a:hover .shadow {
     visibility: hidden;
     opacity: 0;
 }

@@ -10,7 +10,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     color: #444444;
-    min-width: 1200px;
+    /* min-width: 1200px; */
 }
 
 .w {
@@ -21,6 +21,12 @@ body {
 a {
     color: #343a40;
     text-decoration: none;
+}
+
+h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 
@@ -34,6 +40,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
+}
+
+.hamburger {
+    display: none;
 }
 
 .menu-wrapper {
@@ -147,48 +157,54 @@ header {
     content: '電話號碼：';
     background-image: url(../img/index/phone-call.png);
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 35px;
     background-position-y: center;
+    background-size: contain;
 }
 
 .information .cell::before {
     content: '手機：';
     background-image: url(../img/index/cell-phone.png);
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 35px;
     background-position-y: center;
+    background-size: contain;
 }
 
 .information .line::before {
-    content: '專人Line id:';
+    content: '專人Line id：';
     background-image: url(../img/index/line.png);
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 35px;
     background-position-y: center;
+    background-size: contain;
 }
 
 .information .mail::before {
-    content: '電子信箱:';
+    content: '電子信箱：';
     background-image: url(../img/index/envelope.png);
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 35px;
     background-position-y: center;
+    background-size: contain;
 }
 
 .information .address::before {
-    content: '事務所地址:';
+    content: '地址：';
     background-image: url(../img/index/map.png);
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 35px;
     background-position-y: center;
+    background-size: contain;
 }
 
 .information .time::before {
-    content: '營業時間:';
+    content: '營業時間：';
     background-image: url(../img/index/clock.png);
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 35px;
     background-position-y: center;
+    background-size: contain;
 }
 
 .information-wrapper .map {

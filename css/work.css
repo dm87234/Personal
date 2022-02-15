@@ -1,9 +1,3 @@
-.work-wrapper h2 {
-    margin-top: 50px;
-    font-size: 42px;
-    text-align: center;
-}
-
 .work-title h2:hover {
     color: #444;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);

@@ -3,11 +3,6 @@
     box-sizing: border-box;
 }
 
-.describe-wrapper h2 {
-    font-size: 42px;
-    text-align: center;
-}
-
 .describe {
     width: 1000px;
     margin: 0 auto 10px;

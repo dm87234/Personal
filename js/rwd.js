@@ -11,13 +11,16 @@ window.addEventListener('load', function() {
         menu.classList.toggle('open');
     });
 
-    if (document.body.clientWidth <= 414) {
+    // 設計札記的下拉子選單
+    if (document.body.clientWidth <= 1024) {
         var work_all = document.querySelector('.work_all');
         var works = document.querySelector('.works');
+        // 判斷開關
         var flag = true;
         //console.log(work_all);
         work_all.addEventListener('click', function(e) {
             if (flag) {
+                // 先不要跳轉頁面
                 e.preventDefault();
 
                 works.classList.add('works-on');

@@ -176,7 +176,7 @@
 
 /* 平板 */
 
-@media screen and (min-width:1024px) and (max-width:1280px) {
+@media screen and (min-width:1024px) and (max-width:1279.98px) {
     .menu-wrapper {
         width: 100%;
     }

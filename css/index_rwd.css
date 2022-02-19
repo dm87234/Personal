@@ -44,10 +44,6 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1023.98px) {
-    .slogan-wrapper img {
-        width: 100%;
-        vertical-align: top;
-    }
     .slogan img {
         width: 90%;
     }

@@ -26,6 +26,27 @@
 
 
 <body>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: 'your-app-id',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v2.11'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!-- header導航 -->
     <header>
@@ -176,6 +197,9 @@
         <a href="javascript:;" class="to-top">
             <i></i> TOP
         </a>
+
+        <div class="fb-customerchat" page_id="113174217945971" minimized="true">
+        </div>
     </main>
 
     <footer>

@@ -288,7 +288,7 @@
         width: 90%;
     }
     .shadow p {
-        font-size: 24px;
+        font-size: 32px;
     }
     a:hover .shadow {
         visibility: none;
